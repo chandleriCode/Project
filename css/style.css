@@ -1,6 +1,9 @@
 /* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    @font-face {
+        font-family: Double_Bubble_Shadow.otf;
+        src: url('Double_Bubble_Shadow.otf');
+    }
     line-height: 1.6;
     margin: 0;
     padding: 0;
