@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Base Styles */
 body {
-    @font-face {
-        font-family: Double_Bubble_Shadow.otf;
-        src: url('Double_Bubble_Shadow.otf');
-    }
+    font-family: "Noto Sans", serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
