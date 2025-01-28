@@ -37,3 +37,19 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+.death:active {
+    color: darkred;
+}
+.jumpscare{
+    width: 1000000;
+    height: 1000000;
+    animation: popup 5s linear infinite;
+
+}
+
+
+@keyframes jumpscare{
+0% {transform: scale(0.001)}
+50% {transform: scale(1)}
+100% {transform: scale(10000000000)}
+}
