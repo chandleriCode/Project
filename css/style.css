@@ -41,11 +41,24 @@ footer {
     color: darkred;
 }
 .jumpscare{
-    width: 100px;
-    height: 100px;
     animation: jumpscares 5s linear infinite;
-
+    display: flex;                   /* Use flexbox to center */
+    justify-content: center;          /* Horizontally center */
+    align-items: center;              /* Vertically center */
+    width: 100%;                      /* Full width */
+    height: 100vh;                    /* Full height of the viewport */
+    position: fixed;                  /* Stay in place */
+    top: 0;                           /* Align at the top */
+    left: 0;                          /* Align at the left */
+    z-index: 999; 
 }
+.center {
+    display: block;                   /* Make the image block-level */
+    margin: 0 auto;                   /* Center horizontally */
+    max-width: 100%;                   /* Ensure it's responsive */
+    height: auto;             /* Maintain aspect ratio */
+}
+
 
 
 @keyframes jumpscares {
