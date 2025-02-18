@@ -12,8 +12,8 @@
         <h1>Welcome to My Project</h1>
         <nav>
             <a href="index.html">Home</a>    <!--inside of the href="", you put the name of the designated file!-->
-            <a href="about.html">About</a>
-            <a href="brain.html">Brain<t/a> <!-- Try creating your own Brain page! HINT: You have to make a contact.html page!-->
+            <a href="about.html">About<t/a>
+            <a href="brain.html">Brain</a> <!-- Try creating your own Brain page! HINT: You have to make a contact.html page!-->
         </nav>
     </header>
 
@@ -21,7 +21,7 @@
     <main>
         <section>
             <h2>About This Project</h2>
-            <p>WARNING! JUMPSCARE IN THE ABOUT PAGE! BE CAREFUL FOR THE BUTTON! </p>
+            <p ><a href = "about.html" style = "text-decoration: none;" id="element" onmouseover="changeStyle()" onmouseout="resetStyle()">WARNING! JUMPSCARE IN THE ABOUT PAGE! BE CAREFUL FOR THE BUTTON! </a></p>
         
         </section>
     </main>
@@ -30,5 +30,22 @@
     <footer>
         <p>&copy; 2025 My Project. All rights reserved.</p>
     </footer>
+
+<script>
+let timeout;
+//Function to change styles of specific elements
+function changeStyle() {
+document.getElementById("element").style.color = "darkred";
+}
+// Function to reset the styles after the hover ends
+function resetStyle() {
+    timeout = setTimeout(function() {
+        document.getElementById("element").style.color = "purple";
+    })
+}
+
+
+</script>
+
 </body>
 </html>
